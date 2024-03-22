@@ -248,7 +248,8 @@ td {
 
 @media (max-width: 1024px) {
   .container {
-    width: 555px;
+    width: 633px;
+    height: 900px;
   }
 }
 
