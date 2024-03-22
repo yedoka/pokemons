@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Pokemon Search App</h1>
+      <div class="container">
+        <form id="search-form">
+          <label for="search-input">Enter a Pokemon name or ID:</label>
+          <input type="text" id="search-input" required />
+          <button id="search-button">Search</button>
+        </form>
+        <div class="output">
+          <div class="top-container">
+            <div class="name-and-id">
+              <span id="pokemon-name"></span>
+              <span id="pokemon-id"></span>
+            </div>
+            <div class="size">
+              <span id="height"></span>
+              <span id="weight"></span>
+            </div>
+            <div id="sprite-container" class="sprite-container"></div>
+            <div id="types"></div>
+          </div>
+          <div class="bottom-container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>HP</td>
+                  <td id="hp">N/A</td>
+                </tr>
+                <tr>
+                  <td>Attack</td>
+                  <td id="attack">N/A</td>
+                </tr>
+                <tr>
+                  <td>Defense</td>
+                  <td id="defense">N/A</td>
+                </tr>
+                <tr>
+                  <td>Sp. Attack</td>
+                  <td id="special-attack">N/A</td>
+                </tr>
+                <tr>
+                  <td>Sp. Defense</td>
+                  <td id="special-defense">N/A</td>
+                </tr>
+                <tr>
+                  <td>Speed</td>
+                  <td id="speed">N/A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --gray: #3d3b40;
+  --light-blue: #bfcfe7;
+  --white: #fffadd;
+  --green: #87a922;
+  --red: #ff9c54;
+  --poison: #a5dd9b;
+  --bug: #5f6f52;
+  --normal: #ded0b6;
+  --fighting: #fa7070;
+  --electric: #fff78a;
+  --ghost: #31304d;
+  --ground: #c2b280;
+  --rock: #a5a58d;
+  --psychic: #711db0;
+  --ice: #a5ddff;
+  --steel: #a5a5a5;
+  --dragon: #a5a5ff;
+  --fairy: #f8a5c2;
+  --dark: #3d3b40;
+  --grayish: #344955;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(255, 250, 221);
+  background: radial-gradient(
+    circle,
+    rgba(255, 250, 221, 1) 0%,
+    rgba(52, 73, 85, 1) 90%
+  );
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 800px;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: var(--white);
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+  text-align: center;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+form input {
+  width: 70%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+form button {
+  font-family: "Poppins", sans-serif;
+  width: 100px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: var(--grayish);
+  color: var(--white);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #50727b;
+  color: var(--white);
+}
+
+form button:active {
+  background-color: #50727b;
+}
+
+.output {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.bottom-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.bottom-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.5em 1em;
+  border: 2px solid var(--white);
+  text-align: center;
+  width: 50%;
+  background-color: var(--grayish);
+  color: var(--white);
+  border-radius: 15px;
+}
+
+.name-and-id {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.sprite-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sprite-container img {
+  width: 200px;
+  height: 200px;
+}
+
+#types {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+#types .type {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--white);
+}
+
+#types .grass {
+  background-color: var(--green);
+}
+
+#types .fire {
+  background-color: var(--red);
+}
+
+#types .water {
+  background-color: var(--blue);
+}
+
+#types .flying {
+  color: #3d3b40;
+  background-color: var(--light-blue);
+}
+
+#types .poison {
+  background-color: var(--poison);
+  color: #3d3b40;
+}
+
+#types .bug {
+  background-color: var(--bug);
+}
+
+#types .normal {
+  color: #3d3b40;
+  background-color: var(--normal);
+}
+
+#types .fighting {
+  background-color: var(--fighting);
+}
+
+#types .electric {
+  background-color: var(--electric);
+  color: #3d3b40;
+}
+
+#types .ground {
+  background-color: var(--ground);
+}
+
+#types .rock {
+  background-color: var(--rock);
+}
+
+#types .psychic {
+  background-color: var(--psychic);
+}
+
+#types .ice {
+  background-color: var(--ice);
+}
+
+#types .steel {
+  background-color: var(--steel);
+}
+
+#types .dragon {
+  background-color: var(--dragon);
+}
+
+#types .fairy {
+  background-color: var(--fairy);
+}
+
+#types .dark {
+  background-color: var(--dark);
+}
+
+#types .ghost {
+  background-color: var(--ghost);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 555px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 350px;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .sprite-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #types .type {
+    font-size: 1rem;
+  }
+
+  .name-and-id {
+    font-size: 1.2rem;
+  }
+
+  td {
+    padding: 0.5em 0.5em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form label {
+    font-size: 1.2rem;
+  }
+
+  form input {
+    padding: 0.8rem;
+  }
+
+  form button {
+    padding: 0.8rem;
+  }
+
+  .output {
+    margin: 5px 0;
+  }
+
+  .top-container {
+    margin-bottom: 0.5rem;
+  }
+
+  .name-and-id {
+    margin: 0.5rem 0;
+  }
+
+  #types {
+    margin: 0.5rem 0;
+  }
+
+  .sprite-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #types .type {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    padding: 5px 10px;
+  }
+
+  td {
+    padding: 0.5em 0.5em;
+  }
+}
